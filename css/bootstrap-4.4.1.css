@@ -96,6 +96,10 @@
 }
 
 
+.indexMenu {
+	color: inherit;
+}
+
 .indexMenu:hover {
   font-size: 2.8rem;
 	transition: all .2s ease-in-out;
