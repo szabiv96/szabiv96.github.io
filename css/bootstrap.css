@@ -80,12 +80,61 @@
   box-sizing: border-box;
 }
 
+.centerbox {
+  border: whitesmoke;
+  border-style: solid;
+  color: whitesmoke;
+  padding: 1%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+}
+
+.sideboxes {
+  border: whitesmoke;
+  border-style: solid;
+  height: 20vh;
+  color: whitesmoke;
+  padding: 1%;
+}
+
+.welcomeBox {
+  overflow-wrap: break-word;
+  width: 100%;
+  z-index: 99;
+}
+
+
+.indexMenu {
+  color: transparent;
+  font-size: 3.5vh;
+  text-shadow: 0px 0px 12px #FFFFFF;
+  -webkit-text-stroke: 1px white;
+  font-weight: bold;
+}
+
+.fixed-height {
+  height: 50vh !important;
+  object-fit: contain !important;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#row1, #row2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
 #fourMenu{
   opacity: 0;
   position: fixed;
   transition: all 1s ease;
   transform: translate(3000px);
   z-index: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .mainMenuDisplay{
@@ -93,7 +142,9 @@
   transform: translate(0px) !important;
   transition: all 0.2s ease;
   z-index: 99 !important;
-  position: absolute !important;
+  position: fixed !important;
+  display: run-in;
+  
 }
 
 #gradientBodyBG {
@@ -102,6 +153,38 @@
 	background-repeat: no-repeat;
   background-attachment: fixed;
 
+}
+
+#menu01 {
+  height: 50vh;
+  background-image: url(/images/front01.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#menu02 {
+  height: 50vh;
+  background-image: url(/images/front02.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#menu03 {
+  height: 50vh;
+  background-image: url(/images/front03.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#menu04 {
+  height: 50vh;
+  background-image: url(/images/front04.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 #gradientBG {
@@ -117,7 +200,6 @@
     background-image: -moz-linear-gradient(245deg,rgba(248,0,255,1.00) 0%,rgba(0,255,68,1.00) 100%);
     background-image: -o-linear-gradient(245deg,rgba(248,0,255,1.00) 0%,rgba(0,255,68,1.00) 100%);
     background-image: linear-gradient(205deg,rgba(248,0,255,1.00) 0%,rgba(0,255,68,1.00) 100%);
-
 	
 }
 
@@ -126,7 +208,6 @@
     background-image: -moz-linear-gradient(48deg,rgba(0,29,255,1.00) 0%,rgba(0,255,36,1.00) 100%);
     background-image: -o-linear-gradient(48deg,rgba(0,29,255,1.00) 0%,rgba(0,255,36,1.00) 100%);
     background-image: linear-gradient(42deg,rgba(0,29,255,1.00) 0%,rgba(0,255,36,1.00) 100%);
-
 	
 }
 
@@ -135,7 +216,6 @@
     background-image: -moz-linear-gradient(136deg,rgba(255,253,0,1.00) 0%,rgba(0,60,255,1.00) 100%);
     background-image: -o-linear-gradient(136deg,rgba(255,253,0,1.00) 0%,rgba(0,60,255,1.00) 100%);
     background-image: linear-gradient(314deg,rgba(255,253,0,1.00) 0%,rgba(0,60,255,1.00) 100%);
-	
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -224,6 +304,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 abbr[title] {
@@ -2005,7 +2086,25 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+
+#menu01, #menu02, #menu03, #menu04 {
+  height: 25vh;
 }
+
+.transparentHeading{
+  font-size: 4rem;
+  text-align: left;
+}
+
+.welcomeBox {
+  width: 100%;
+  padding-left: 5%;
+  
+}
+
+}
+
+
 @media (max-width: 991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
@@ -3070,7 +3169,7 @@ textarea.form-control-lg {
   --bs-btn-bg: #1E1E1E;
   --bs-btn-border-color: #212529;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #424649;
+  --bs-btn-hover-bg: transparent;
   --bs-btn-hover-border-color: #373b3e;
   --bs-btn-focus-shadow-rgb: 66, 70, 73;
   --bs-btn-active-color: #fff;
@@ -6904,8 +7003,8 @@ textarea.form-control-lg {
 .sticky-top {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  z-index: 1020;
+  top: 10px;
+  z-index: 10;
 }
 
 .sticky-bottom {
@@ -7075,6 +7174,7 @@ textarea.form-control-lg {
 
 .opacity-0 {
   opacity: 0 !important;
+  transition: all 1s ease-in-out;
 }
 
 .opacity-25 {
@@ -7091,6 +7191,7 @@ textarea.form-control-lg {
 
 .opacity-100 {
   opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
 }
 
 .overflow-auto {

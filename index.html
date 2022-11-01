@@ -5,49 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="additionalSCSS.css">
     <script src="/js/bootstrap.js"></script>
     <script src="/js/additionalScripting.js" defer></script>
     <title>Document</title>
 </head>
-<body>
+<body class="p-0 m-0" id="gradientBodyBG">
+
+    <div class="transition transition-1 is-active"></div>
     
-    <button type="button" class="btn btn-dark fixed-top m-2" id="menuButton"><h1>O</h1></button>
-
-    
+    <button type="button" class="btn btn-dark fixed-top m-3" id="menuButton"><h1>O</h1></button>
 
 
-    <div class="container p-0 mt-4" id="fourMenu">
-        <div class="row p-0 m-0 ">
+    <div id="fourMenu">
+        <div class="row" id="row1">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 m-0 position-relative" id="gradientBG">
-                <img src="/images/front01.png" width="100%"  alt="" srcset="">
+                
+                <div id="menu01"></div>
                 <div class="carousel-caption position-absolute">
                     <h1><a href="projects.html" class="indexMenu">PROJECTS</a></h1>
                 </div>
                 </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 m-0 position-relative" id="gradientBG2">
-                <img src="/images/front02.png" width="100%"  alt="" srcset="">
+                <div id="menu02"></div>
                 <div class="carousel-caption position-absolute">
                     <h1 style="margin-left: 30%;"><a href="projects.html" class="indexMenu">ABOUT</a></h1>
                 </div>
             </div>
         </div>
 
-        <div class="row p-0 m-0">
+        <div class="row" id="row2">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 m-0 position-relative" id="gradientBG3">
-                <img src="/images/front03.png" width="100%"  alt="" srcset="">
+                <div id="menu03"></div>
                 <div class="carousel-caption position-absolute">
                     <h1 style="margin-left: 50%;"><a href="projects.html" class="indexMenu">BLOG</a></h1>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0 m-0 position-relative" id="gradientBG4">
-                <img src="/images/front04.png" width="100%"  alt="" srcset="">
+                <div id="menu04"></div>
                 <div class="carousel-caption position-absolute">
                     <h1><a href="projects.html" class="indexMenu">GALLERY</a></h1>
                 </div>
             </div>
         </div>
-
     </div>
+
+
+    <div class="container mt-3 mb-3 justify-content-center align-items-center" id="behind" style="width: 95%;">
+        <div class="row">
+            <div class="col-md-3 sideboxes"><h3><a href="">Latest Blog</a></h3></div>
+            <div class="col-md-6"></div>
+            <div class="col-md-3 sideboxes"><h3 style="text-align: right;"><a href="">Latest Artwork</a></h3></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 centerbox">
+                <div class="welcomeBox">
+                    <h2 class="transparentHeading">SZABOLCS LAJOS VARGA</h2>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 sideboxes"><h3 style="position: absolute; bottom: 4%;"> <a href="">Latest Project</a></h3></div>
+            <div class="col-md-6"></div>
+            <div class="col-md-3 sideboxes"><h3 style="position: relative; top: 75%; text-align: end;"> <a href="#">Latest Video</a></h3></div>
+        </div>
+    </div>
+
 
 
 </body>
